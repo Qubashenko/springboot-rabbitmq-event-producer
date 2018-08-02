@@ -1,0 +1,122 @@
+2018-08-02 17:06:56.374  INFO 9284 --- [main] c.e.rabbitmq.EventProducerRunner         : Starting EventProducerRunner on BZG-5CG64951J7 with PID 9284 (C:\Users\JASZU1\Downloads\SpringRabbitMqProducer\target\classes started by jaszu1 in C:\Users\JASZU1\Downloads\SpringRabbitMqProducer)
+2018-08-02 17:06:56.378  INFO 9284 --- [main] c.e.rabbitmq.EventProducerRunner         : No active profile set, falling back to default profiles: default
+2018-08-02 17:06:56.450  INFO 9284 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@335f41f6: startup date [Thu Aug 02 17:06:56 CEST 2018]; root of context hierarchy
+2018-08-02 17:06:58.301  INFO 9284 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$f246b292] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-02 17:06:59.058  INFO 9284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-08-02 17:06:59.102  INFO 9284 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-02 17:06:59.102  INFO 9284 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-02 17:06:59.126  INFO 9284 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\CCM;C:\Program Files\Git\cmd;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\apache-maven-3.5.0\bin\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files (x86)\Microsoft VS Code\bin;C:\apache-maven-3.5.0\bin;C:\Users\JASZU1\AppData\Local\Programs\Fiddler;C:\Users\JASZU1\AppData\Roaming\npm;.]
+2018-08-02 17:06:59.414  INFO 9284 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-02 17:06:59.414  INFO 9284 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2968 ms
+2018-08-02 17:06:59.887  INFO 9284 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-08-02 17:06:59.899  INFO 9284 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-02 17:06:59.907  INFO 9284 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-02 17:06:59.907  INFO 9284 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-02 17:06:59.907  INFO 9284 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-02 17:07:01.137  INFO 9284 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 17:07:01.545  INFO 9284 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@335f41f6: startup date [Thu Aug 02 17:06:56 CEST 2018]; root of context hierarchy
+2018-08-02 17:07:01.733  INFO 9284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addUser]}" onto com.eventproducer.rabbitmq.model.User com.eventproducer.rabbitmq.service.InputServiceController.addUser(int,java.lang.String,java.lang.String,java.lang.String) throws com.fasterxml.jackson.core.JsonProcessingException
+2018-08-02 17:07:01.741  INFO 9284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-02 17:07:01.741  INFO 9284 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-02 17:07:01.810  INFO 9284 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 17:07:01.810  INFO 9284 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 17:07:02.322  INFO 9284 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-02 17:07:02.342  INFO 9284 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-08-02 17:07:02.346  INFO 9284 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-08-02 17:07:02.398  INFO 9284 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-08-02 17:07:02.426 ERROR 9284 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.eventproducer.rabbitmq.EventProducerRunner.main(EventProducerRunner.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:496)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 19 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 20 common frames omitted
+
+2018-08-02 17:07:02.434  INFO 9284 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-08-02 17:07:02.462  INFO 9284 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-08-02 17:07:02.462 ERROR 9284 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2018-08-02 17:07:02.462  INFO 9284 --- [main] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@335f41f6: startup date [Thu Aug 02 17:06:56 CEST 2018]; root of context hierarchy
+2018-08-02 17:07:02.470  INFO 9284 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-08-02 17:07:02.470  INFO 9284 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-08-02 17:07:02.486  INFO 9284 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-02 17:07:02.490  INFO 9284 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-08-02 17:07:25.148  INFO 9532 --- [main] c.e.rabbitmq.EventProducerRunner         : Starting EventProducerRunner on BZG-5CG64951J7 with PID 9532 (C:\Users\JASZU1\Downloads\SpringRabbitMqProducer\target\classes started by jaszu1 in C:\Users\JASZU1\Downloads\SpringRabbitMqProducer)
+2018-08-02 17:07:25.152  INFO 9532 --- [main] c.e.rabbitmq.EventProducerRunner         : No active profile set, falling back to default profiles: default
+2018-08-02 17:07:25.221  INFO 9532 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2689fcf8: startup date [Thu Aug 02 17:07:25 CEST 2018]; root of context hierarchy
+2018-08-02 17:07:26.530  INFO 9532 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$94c6cae7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-02 17:07:27.183  INFO 9532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-08-02 17:07:27.215  INFO 9532 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-02 17:07:27.215  INFO 9532 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-02 17:07:27.227  INFO 9532 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\CCM;C:\Program Files\Git\cmd;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\apache-maven-3.5.0\bin\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Program Files (x86)\Microsoft VS Code\bin;C:\apache-maven-3.5.0\bin;C:\Users\JASZU1\AppData\Local\Programs\Fiddler;C:\Users\JASZU1\AppData\Roaming\npm;.]
+2018-08-02 17:07:27.343  INFO 9532 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-02 17:07:27.343  INFO 9532 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2122 ms
+2018-08-02 17:07:27.556  INFO 9532 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-08-02 17:07:27.564  INFO 9532 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-02 17:07:27.564  INFO 9532 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-02 17:07:27.564  INFO 9532 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-02 17:07:27.564  INFO 9532 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-02 17:07:28.233  INFO 9532 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 17:07:28.473  INFO 9532 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2689fcf8: startup date [Thu Aug 02 17:07:25 CEST 2018]; root of context hierarchy
+2018-08-02 17:07:28.601  INFO 9532 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addUser]}" onto com.eventproducer.rabbitmq.model.User com.eventproducer.rabbitmq.service.InputServiceController.addUser(int,java.lang.String,java.lang.String,java.lang.String) throws com.fasterxml.jackson.core.JsonProcessingException
+2018-08-02 17:07:28.609  INFO 9532 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-02 17:07:28.613  INFO 9532 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-02 17:07:28.665  INFO 9532 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 17:07:28.665  INFO 9532 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 17:07:29.010  INFO 9532 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-02 17:07:29.022  INFO 9532 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-08-02 17:07:29.026  INFO 9532 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-08-02 17:07:29.054  INFO 9532 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-08-02 17:07:29.098  INFO 9532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-02 17:07:29.102  INFO 9532 --- [main] c.e.rabbitmq.EventProducerRunner         : Started EventProducerRunner in 4.851 seconds (JVM running for 11.602)
+2018-08-02 17:07:39.540  INFO 9532 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-02 17:07:39.544  INFO 9532 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-02 17:07:39.568  INFO 9532 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-08-02 17:07:39.664  INFO 9532 --- [http-nio-8080-exec-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2018-08-02 17:07:39.744  INFO 9532 --- [http-nio-8080-exec-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#61b48ca0:0/SimpleConnection@4f9db145 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 52581]
+2018-08-02 17:07:39.752  INFO 9532 --- [http-nio-8080-exec-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (event.msg.queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.

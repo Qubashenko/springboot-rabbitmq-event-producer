@@ -1,0 +1,7 @@
+com\eventproducer\rabbitmq\model\User.class
+com\eventproducer\rabbitmq\model\RequestedMsg.class
+com\eventproducer\rabbitmq\service\InputServiceController.class
+com\eventproducer\rabbitmq\EventProducerRunner.class
+com\eventproducer\rabbitmq\producer\Producer.class
+com\eventproducer\rabbitmq\config\RabbitMqConfig.class
+com\eventproducer\rabbitmq\model\EventMsg.class
