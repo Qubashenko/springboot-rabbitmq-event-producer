@@ -13,7 +13,7 @@ import java.sql.Timestamp;
 import java.util.List;
 
 @Component
-@JsonIdentityInfo(generator=ObjectIdGenerators.IntSequenceGenerator.class,property="@id", scope = EventMsg.class)
+@JsonIdentityInfo(generator=ObjectIdGenerators.IntSequenceGenerator.class,property="id", scope = EventMsg.class)
 public class EventMsg {
 
     @Getter @Setter

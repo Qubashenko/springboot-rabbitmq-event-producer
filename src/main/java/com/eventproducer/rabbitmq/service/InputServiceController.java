@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -38,7 +39,7 @@ public class InputServiceController {
         User user = new User(id, name, mobileNum, email);
         String jsonInString = objectMapper.writeValueAsString(user);
 
-        requestedMsg.setRequestedBody(jsonInString);
+        requestedMsg.setRequestedBody(Arrays.asList(user));
         List<RequestedMsg> requestedMsgs = new ArrayList<>(Arrays.asList(requestedMsg));
 
         eventMsg.setProducer("/addUser endpoint");
